@@ -104,8 +104,8 @@ jobs:
           path: ${{ runner.temp }}/digests/*
           retention-days: 1
 
-      outputs:
-        latest_tag: ${{ steps.latest_tag.outputs.LATEST_TAG }}
+    outputs:
+      latest_tag: ${{ steps.latest_tag.outputs.LATEST_TAG }}
 
   merge:
     permissions:
