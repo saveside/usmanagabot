@@ -6,7 +6,7 @@ on:
       - 'unstable'
       - 'testing'
     tags:
-      - 'usmanagabot:*'
+      - '*'
 
 env:
   REPOWN: ${{ github.repository_owner }}
