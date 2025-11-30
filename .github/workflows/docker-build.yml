@@ -71,7 +71,7 @@ jobs:
         if: github.ref_type == 'branch' && (github.ref == 'refs/heads/unstable' || github.ref == 'refs/heads/testing')
         uses: docker/build-push-action@v6
         with:
-          context: ${{ env.REPO }}
+          context: .
           file: Dockerfile
           push: true
           platforms: ${{ matrix.platform }}
